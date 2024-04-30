@@ -1,6 +1,6 @@
 .gallery3 {
     .hero {
-        position: relative; /* Add position relative to allow absolute positioning of heading-text */
+        position: relative; 
         background-image: linear-gradient(rgba(8, 173, 105, .5), rgba(8, 173, 105, 0.5)), url(../images/gallery/3.jpg);
         height: 400px;
         width: 980px;
@@ -9,31 +9,31 @@
         background-repeat: no-repeat;
         margin: 0 auto;
         margin-top: 8%;
-        display: flex; /* Use flexbox to align content */
-        align-items: flex-end; /* Align content vertically to the bottom */
+        display: flex; 
+        align-items: flex-end; 
 
         .heading-text {
-            position: relative; /* Position the heading-text relative to its parent */
-            align-self: flex-end; /* Align heading-text to the bottom of the hero */
-            display: flex; /* Display heading-left and heading-right as flex items */
-            justify-content: space-between; /* Space them apart */
-            width: 100%; /* Full width of the hero */
+            position: relative;
+            align-self: flex-end; 
+            display: flex; 
+            justify-content: space-between; 
+            width: 100%; 
             color: $site-green;
             font-family: GillSans;
 
 
             .heading-left {
-                font-size: 200pt; /* Example styling */
+                font-size: 200pt; 
                 height: 344px;
                 width: 216px;
                 display: flex;
-                align-self: flex-end; /* Align at the bottom */
+                align-self: flex-end; 
                 margin-bottom: -10%;
 
 
             }
             .heading-right {
-                font-size: 100pt; /* Example styling */
+                font-size: 100pt;
                 height: 161px;
                 width: 721px;
                 display: flex;
@@ -44,10 +44,10 @@
         }
     }
     .gallery-text {
-        display: flex; /* Display text-left and text-right as flex items */
-        justify-content: space-between; /* Space them apart */
-        width: 980px; /* Match the width of the hero */
-        margin: 0 auto; /* Center the gallery-text */
+        display: flex; 
+        justify-content: space-between; 
+        width: 980px; 
+        margin: 0 auto; 
         margin-top: 5%;
         margin-bottom: 7%;
         font-family: GillSans-LightItalic;
@@ -60,5 +60,65 @@
             width: 451px;
             height: 133px;
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .gallery3 .hero {
+        height: 300px;
+    }
+    .gallery3 .heading-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .gallery3 .heading-left,
+    .gallery3 .heading-right {
+        font-size: 40pt;
+        margin-bottom: 0;
+    }
+    .gallery3 .gallery-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .gallery3 .text-left,
+    .gallery3 .text-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .gallery3 .hero {
+        height: 400px;
+    }
+    .gallery3 .heading-left,
+    .gallery3 .heading-right {
+        font-size: 60pt;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery3 .hero {
+        width: 980px;
+    }
+    .gallery3 .heading-left,
+    .gallery3 .heading-right {
+        font-size: 80pt;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery3 .hero {
+        width: 1200px;
+    }
+    .gallery3 .heading-left,
+    .gallery3 .heading-right {
+        font-size: 100pt;
     }
 }

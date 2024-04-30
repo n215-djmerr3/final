@@ -67,6 +67,54 @@ nav .line {
   margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+  nav .links .nav-logo {
+    margin-left: 10%;
+  }
+  nav .links .links-nav {
+    min-width: auto;
+    margin-top: 8%;
+    margin-right: 0;
+  }
+  nav .links .links-nav .nav-name {
+    padding-left: 10px;
+  }
+  nav .line {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav .links .nav-logo {
+    margin-left: 20%;
+  }
+  nav .links .links-nav {
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .links .nav-logo {
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  nav .links .links-nav {
+    width: 100%;
+    margin-top: 8%;
+    margin-right: 0;
+  }
+  nav .links .links-nav .nav-name {
+    padding-left: 0;
+    margin-left: 5%;
+    display: block;
+    margin-bottom: 5%;
+  }
+  nav .line {
+    width: 80%;
+  }
+}
 nav-black {
   width: 1280px;
   top: 0;
@@ -116,6 +164,46 @@ nav-black .line {
   margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+  nav-black .links .nav-logo {
+    margin-left: 5%;
+  }
+  nav-black .links .links-nav {
+    min-width: auto;
+    margin-top: 8%;
+    margin-left: 10%;
+  }
+  nav-black .links .links-nav .nav-name {
+    padding-left: 10px;
+  }
+  nav-black .links .links-nav a {
+    margin-left: 0;
+  }
+  nav-black .line {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav-black .links .nav-logo {
+    margin-left: 10%;
+  }
+  nav-black .links .links-nav {
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav-black .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav-black .links .links-nav a {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
+  nav-black .line {
+    width: 80%;
+  }
+}
 .home .wrapper {
   max-width: 100%;
   margin: 0 auto;
@@ -222,15 +310,15 @@ nav-black .line {
   margin-bottom: 2.5%;
 }
 .home .wrapper .purple-box .event-row {
-  display: flex; /* Add this line */
-  justify-content: space-around; /* Or any other justify-content value you prefer */
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
 .home .wrapper .purple-box .event-row .entry {
   display: flex;
-  align-items: flex-start; /* Align items to the top */
-  margin: 10px; /* Add margin for spacing */
+  align-items: flex-start;
+  margin: 10px;
 }
 .home .wrapper .purple-box .event-row .entry .date-box {
   width: 60px;
@@ -239,7 +327,7 @@ nav-black .line {
   text-align: center;
   padding-top: 10px;
   color: #ffffff;
-  margin-right: 10px; /* Add margin to separate from heading and text */
+  margin-right: 10px;
 }
 .home .wrapper .purple-box .event-row .entry .date-box .top-date {
   font-family: GillSans-Bold;
@@ -252,7 +340,7 @@ nav-black .line {
 .home .wrapper .purple-box .event-row .entry .entry-text-box .entry-heading {
   color: #ffffff;
   font-size: 15px;
-  margin-bottom: 5px; /* Add margin between heading and text */
+  margin-bottom: 5px;
   flex-direction: row;
   width: 140px;
   font-family: GillSans;
@@ -264,6 +352,213 @@ nav-black .line {
   font-family: GillSans;
 }
 
+@media (min-width: 576px) {
+  .home .hero {
+    height: 300px;
+  }
+  .home .hero-textbox {
+    padding-top: 120px;
+  }
+  .home .hero-text {
+    width: 50%;
+  }
+  .home .hero-text2 {
+    width: 60%;
+  }
+  .home .hero-button {
+    width: 20%;
+  }
+  .home .white-box {
+    height: 200px;
+  }
+  .home .quote-box {
+    max-width: 90%;
+  }
+  .home .quote-name {
+    margin-left: -35%;
+  }
+  .home .quote-job {
+    margin-left: -25.5%;
+  }
+  .home .purple-box {
+    height: 250px;
+  }
+  .home .purple-heading {
+    font-size: 15pt;
+  }
+  .home .line {
+    width: 60%;
+  }
+  .home .event-row {
+    flex-wrap: wrap;
+  }
+  .home .entry {
+    margin: 5px;
+  }
+  .home .date-box {
+    width: 40px;
+    height: 40px;
+  }
+  .home .entry-heading {
+    font-size: 12px;
+    width: 100px;
+  }
+  .home .entry-text {
+    font-size: 10px;
+    width: 100px;
+  }
+  .home .purple-box {
+    height: auto;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .home .hero {
+    height: 400px;
+  }
+  .home .hero-textbox {
+    padding-top: 150px;
+  }
+  .home .hero-text {
+    width: 45%;
+  }
+  .home .hero-text2 {
+    width: 48%;
+  }
+  .home .hero-button {
+    width: 15%;
+  }
+  .home .white-box {
+    height: 250px;
+  }
+  .home .quote-box {
+    max-width: 80%;
+  }
+  .home .quote-name {
+    margin-left: -25%;
+  }
+  .home .quote-job {
+    margin-left: -15.5%;
+  }
+  .home .purple-box {
+    height: auto;
+    flex-direction: column;
+  }
+  .home .purple-heading {
+    font-size: 18pt;
+  }
+  .home .line {
+    width: 70%;
+  }
+  .home .event-row {
+    flex-wrap: wrap;
+  }
+  .home .entry {
+    margin: 10px;
+  }
+  .home .date-box {
+    width: 50px;
+    height: 50px;
+  }
+  .home .entry-heading {
+    font-size: 14px;
+    width: 120px;
+  }
+  .home .entry-text {
+    font-size: 12px;
+    width: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .home .hero-textbox {
+    padding-top: 200px;
+  }
+  .home .hero-text {
+    width: 40%;
+  }
+  .home .hero-text2 {
+    width: 43%;
+  }
+  .home .hero-button {
+    width: 12%;
+  }
+  .home .white-box {
+    height: 300px;
+  }
+  .home .quote-box {
+    max-width: 720px;
+  }
+  .home .quote-name {
+    margin-left: -21%;
+  }
+  .home .quote-job {
+    margin-left: -11.5%;
+  }
+  .home .purple-box {
+    height: auto;
+    flex-direction: column;
+  }
+  .home .purple-heading {
+    font-size: 20pt;
+  }
+  .home .line {
+    width: 80%;
+  }
+  .home .event-row {
+    flex-wrap: nowrap;
+  }
+  .home .entry {
+    margin: 20px;
+  }
+  .home .date-box {
+    width: 60px;
+    height: 60px;
+  }
+  .home .entry-heading {
+    font-size: 15px;
+    width: 140px;
+  }
+  .home .entry-text {
+    font-size: 13px;
+    width: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .home .hero-textbox {
+    padding-top: 250px;
+  }
+  .home .hero-text {
+    width: 35%;
+  }
+  .home .hero-text2 {
+    width: 38%;
+  }
+  .home .hero-button {
+    width: 10%;
+  }
+  .home .white-box {
+    height: 300px;
+  }
+  .home .quote-name {
+    margin-left: -15%;
+  }
+  .home .quote-job {
+    margin-left: -5.5%;
+  }
+  .home .line {
+    width: 90%;
+  }
+  .home .entry-heading {
+    width: 160px;
+  }
+  .home .entry-text {
+    width: 160px;
+  }
+  .home .purple-box {
+    height: auto;
+    flex-direction: column;
+  }
+}
 .about {
   position: relative;
 }
@@ -304,6 +599,47 @@ nav-black .line {
   font-family: GillSans-LightItalic;
 }
 
+@media screen and (max-width: 768px) {
+  .about .hero {
+    width: 100%;
+    height: 250px;
+    margin-top: 10%;
+  }
+  .about .about-hero-line {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .about .about-text {
+    width: 100%;
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about .hero {
+    width: 80%;
+    height: 300px;
+    margin-top: 8%;
+  }
+  .about .about-hero-line {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about .hero {
+    width: 100%;
+    height: 200px;
+    margin-top: 15%;
+  }
+  .about .about-hero-line {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .about .about-text {
+    width: 90%;
+    font-size: 11pt;
+  }
+}
 .gallery .heading {
   margin-top: 5%;
   margin-left: 13.5%;
@@ -322,12 +658,12 @@ nav-black .line {
 }
 .gallery .grid-box {
   display: flex;
-  flex-direction: column; /* Change to column to stack rows vertically */
+  flex-direction: column;
 }
 .gallery .grid-box .top-row {
   display: flex;
-  justify-content: center; /* Center children horizontally */
-  margin-bottom: 20px; /* Add some space between rows */
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .gallery .grid-box .top-row .left-box {
   background-image: linear-gradient(rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)), url(../images/gallery/1.png);
@@ -336,7 +672,7 @@ nav-black .line {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0 10px; /* Add margin to create space between boxes */
+  margin: 0 10px;
 }
 .gallery .grid-box .top-row .middle-box {
   background-image: linear-gradient(rgba(238, 67, 103, 0.5), rgba(238, 67, 103, 0.5)), url(../images/gallery/2.jpeg);
@@ -345,7 +681,7 @@ nav-black .line {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0 10px; /* Add margin to create space between boxes */
+  margin: 0 10px;
 }
 .gallery .grid-box .top-row .right-box {
   background-image: linear-gradient(rgba(8, 173, 105, 0.5), rgba(8, 173, 105, 0.5)), url(../images/gallery/3.jpg);
@@ -354,12 +690,12 @@ nav-black .line {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0 10px; /* Add margin to create space between boxes */
+  margin: 0 10px;
 }
 .gallery .grid-box .bottom-row {
   display: flex;
-  justify-content: center; /* Center children horizontally */
-  margin-bottom: 20px; /* Add some space between rows */
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .gallery .grid-box .bottom-row .bottom-left {
   background-image: linear-gradient(rgba(84, 13, 110, 0.5), rgba(84, 13, 110, 0.5)), url(../images/gallery/4.jpg);
@@ -368,7 +704,7 @@ nav-black .line {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0 10px; /* Add margin to create space between boxes */
+  margin: 0 10px;
 }
 .gallery .grid-box .bottom-row .bottom-right {
   background-image: linear-gradient(rgba(59, 206, 171, 0.5), rgba(59, 206, 171, 0.5)), url(../images/gallery/5.png);
@@ -377,11 +713,11 @@ nav-black .line {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0 10px; /* Add margin to create space between boxes */
+  margin: 0 10px;
 }
 
 .gallery1 .hero {
-  position: relative; /* Add position relative to allow absolute positioning of heading-text */
+  position: relative;
   background-image: linear-gradient(rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)), url(../images/gallery/1.png);
   height: 400px;
   width: 980px;
@@ -390,29 +726,29 @@ nav-black .line {
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 8%;
-  display: flex; /* Use flexbox to align content */
-  align-items: flex-end; /* Align content vertically to the bottom */
+  display: flex;
+  align-items: flex-end;
 }
 .gallery1 .hero .heading-text {
-  position: relative; /* Position the heading-text relative to its parent */
-  align-self: flex-end; /* Align heading-text to the bottom of the hero */
-  display: flex; /* Display heading-left and heading-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 100%; /* Full width of the hero */
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   color: #FFD140;
   font-family: GillSansregular;
 }
 .gallery1 .hero .heading-text .heading-left {
-  font-size: 200pt; /* Example styling */
+  font-size: 200pt;
   height: 344px;
   width: 216px;
   display: flex;
-  align-self: flex-end; /* Align at the bottom */
+  align-self: flex-end;
   margin-bottom: -10%;
   font-family: GillSans;
 }
 .gallery1 .hero .heading-text .heading-right {
-  font-size: 100pt; /* Example styling */
+  font-size: 100pt;
   height: 161px;
   width: 721px;
   display: flex;
@@ -421,10 +757,10 @@ nav-black .line {
   font-family: GillSans;
 }
 .gallery1 .gallery-text {
-  display: flex; /* Display text-left and text-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 980px; /* Match the width of the hero */
-  margin: 0 auto; /* Center the gallery-text */
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 7%;
 }
@@ -440,7 +776,7 @@ nav-black .line {
 }
 
 .gallery2 .hero {
-  position: relative; /* Add position relative to allow absolute positioning of heading-text */
+  position: relative;
   background-image: linear-gradient(rgba(238, 67, 103, 0.5), rgba(238, 67, 103, 0.5)), url(../images/gallery/2.jpeg);
   height: 400px;
   width: 980px;
@@ -449,29 +785,29 @@ nav-black .line {
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 8%;
-  display: flex; /* Use flexbox to align content */
-  align-items: flex-end; /* Align content vertically to the bottom */
+  display: flex;
+  align-items: flex-end;
 }
 .gallery2 .hero .heading-text {
-  position: relative; /* Position the heading-text relative to its parent */
-  align-self: flex-end; /* Align heading-text to the bottom of the hero */
-  display: flex; /* Display heading-left and heading-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 100%; /* Full width of the hero */
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   color: #EE4367;
   font-family: GillSans;
 }
 .gallery2 .hero .heading-text .heading-left {
-  font-size: 200pt; /* Example styling */
+  font-size: 200pt;
   height: 344px;
   width: 216px;
   display: flex;
-  align-self: flex-end; /* Align at the bottom */
+  align-self: flex-end;
   margin-bottom: -10%;
   font-family: GillSans;
 }
 .gallery2 .hero .heading-text .heading-right {
-  font-size: 100pt; /* Example styling */
+  font-size: 100pt;
   height: 161px;
   width: 721px;
   display: flex;
@@ -480,10 +816,10 @@ nav-black .line {
   font-family: GillSans;
 }
 .gallery2 .gallery-text {
-  display: flex; /* Display text-left and text-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 980px; /* Match the width of the hero */
-  margin: 0 auto; /* Center the gallery-text */
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 7%;
   font-family: GillSans-LightItalic;
@@ -497,8 +833,63 @@ nav-black .line {
   height: 133px;
 }
 
+@media (min-width: 576px) {
+  .gallery2 .hero {
+    height: 300px;
+  }
+  .gallery2 .heading-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .gallery2 .heading-left,
+  .gallery2 .heading-right {
+    font-size: 40pt;
+    margin-bottom: 0;
+  }
+  .gallery2 .gallery-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gallery2 .text-left,
+  .gallery2 .text-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery2 .hero {
+    height: 400px;
+  }
+  .gallery2 .heading-left,
+  .gallery2 .heading-right {
+    font-size: 60pt;
+  }
+}
+@media (min-width: 992px) {
+  .gallery2 .hero {
+    width: 980px;
+  }
+  .gallery2 .heading-left,
+  .gallery2 .heading-right {
+    font-size: 80pt;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery2 .hero {
+    width: 1200px;
+  }
+  .gallery2 .heading-left,
+  .gallery2 .heading-right {
+    font-size: 100pt;
+  }
+}
 .gallery3 .hero {
-  position: relative; /* Add position relative to allow absolute positioning of heading-text */
+  position: relative;
   background-image: linear-gradient(rgba(8, 173, 105, 0.5), rgba(8, 173, 105, 0.5)), url(../images/gallery/3.jpg);
   height: 400px;
   width: 980px;
@@ -507,28 +898,28 @@ nav-black .line {
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 8%;
-  display: flex; /* Use flexbox to align content */
-  align-items: flex-end; /* Align content vertically to the bottom */
+  display: flex;
+  align-items: flex-end;
 }
 .gallery3 .hero .heading-text {
-  position: relative; /* Position the heading-text relative to its parent */
-  align-self: flex-end; /* Align heading-text to the bottom of the hero */
-  display: flex; /* Display heading-left and heading-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 100%; /* Full width of the hero */
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   color: #08AD69;
   font-family: GillSans;
 }
 .gallery3 .hero .heading-text .heading-left {
-  font-size: 200pt; /* Example styling */
+  font-size: 200pt;
   height: 344px;
   width: 216px;
   display: flex;
-  align-self: flex-end; /* Align at the bottom */
+  align-self: flex-end;
   margin-bottom: -10%;
 }
 .gallery3 .hero .heading-text .heading-right {
-  font-size: 100pt; /* Example styling */
+  font-size: 100pt;
   height: 161px;
   width: 721px;
   display: flex;
@@ -536,10 +927,10 @@ nav-black .line {
   margin-bottom: -4%;
 }
 .gallery3 .gallery-text {
-  display: flex; /* Display text-left and text-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 980px; /* Match the width of the hero */
-  margin: 0 auto; /* Center the gallery-text */
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 7%;
   font-family: GillSans-LightItalic;
@@ -553,8 +944,63 @@ nav-black .line {
   height: 133px;
 }
 
+@media (min-width: 576px) {
+  .gallery3 .hero {
+    height: 300px;
+  }
+  .gallery3 .heading-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .gallery3 .heading-left,
+  .gallery3 .heading-right {
+    font-size: 40pt;
+    margin-bottom: 0;
+  }
+  .gallery3 .gallery-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gallery3 .text-left,
+  .gallery3 .text-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery3 .hero {
+    height: 400px;
+  }
+  .gallery3 .heading-left,
+  .gallery3 .heading-right {
+    font-size: 60pt;
+  }
+}
+@media (min-width: 992px) {
+  .gallery3 .hero {
+    width: 980px;
+  }
+  .gallery3 .heading-left,
+  .gallery3 .heading-right {
+    font-size: 80pt;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery3 .hero {
+    width: 1200px;
+  }
+  .gallery3 .heading-left,
+  .gallery3 .heading-right {
+    font-size: 100pt;
+  }
+}
 .gallery4 .hero {
-  position: relative; /* Add position relative to allow absolute positioning of heading-text */
+  position: relative;
   background-image: linear-gradient(rgba(84, 13, 110, 0.5), rgba(84, 13, 110, 0.5)), url(../images/gallery/4.jpg);
   height: 400px;
   width: 980px;
@@ -563,28 +1009,28 @@ nav-black .line {
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 8%;
-  display: flex; /* Use flexbox to align content */
-  align-items: flex-end; /* Align content vertically to the bottom */
+  display: flex;
+  align-items: flex-end;
 }
 .gallery4 .hero .heading-text {
-  position: relative; /* Position the heading-text relative to its parent */
-  align-self: flex-end; /* Align heading-text to the bottom of the hero */
-  display: flex; /* Display heading-left and heading-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 100%; /* Full width of the hero */
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   color: #540D6E;
   font-family: GillSans;
 }
 .gallery4 .hero .heading-text .heading-left {
-  font-size: 200pt; /* Example styling */
+  font-size: 200pt;
   height: 344px;
   width: 216px;
   display: flex;
-  align-self: flex-end; /* Align at the bottom */
+  align-self: flex-end;
   margin-bottom: -10%;
 }
 .gallery4 .hero .heading-text .heading-right {
-  font-size: 90pt; /* Example styling */
+  font-size: 90pt;
   height: 161px;
   width: 721px;
   display: flex;
@@ -592,10 +1038,10 @@ nav-black .line {
   margin-bottom: -4%;
 }
 .gallery4 .gallery-text {
-  display: flex; /* Display text-left and text-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 980px; /* Match the width of the hero */
-  margin: 0 auto; /* Center the gallery-text */
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 7%;
 }
@@ -610,8 +1056,63 @@ nav-black .line {
   font-family: GillSans-LightItalic;
 }
 
+@media (min-width: 576px) {
+  .gallery4 .hero {
+    height: 300px;
+  }
+  .gallery4 .heading-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .gallery4 .heading-left,
+  .gallery4 .heading-right {
+    font-size: 40pt;
+    margin-bottom: 0;
+  }
+  .gallery4 .gallery-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gallery4 .text-left,
+  .gallery4 .text-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery4 .hero {
+    height: 400px;
+  }
+  .gallery4 .heading-left,
+  .gallery4 .heading-right {
+    font-size: 60pt;
+  }
+}
+@media (min-width: 992px) {
+  .gallery4 .hero {
+    width: 980px;
+  }
+  .gallery4 .heading-left,
+  .gallery4 .heading-right {
+    font-size: 80pt;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery4 .hero {
+    width: 1200px;
+  }
+  .gallery4 .heading-left,
+  .gallery4 .heading-right {
+    font-size: 100pt;
+  }
+}
 .gallery5 .hero {
-  position: relative; /* Add position relative to allow absolute positioning of heading-text */
+  position: relative;
   background-image: linear-gradient(rgba(59, 206, 171, 0.5), rgba(59, 206, 171, 0.5)), url(../images/gallery/5.png);
   height: 400px;
   width: 980px;
@@ -620,28 +1121,28 @@ nav-black .line {
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 8%;
-  display: flex; /* Use flexbox to align content */
-  align-items: flex-end; /* Align content vertically to the bottom */
+  display: flex;
+  align-items: flex-end;
 }
 .gallery5 .hero .heading-text {
-  position: relative; /* Position the heading-text relative to its parent */
-  align-self: flex-end; /* Align heading-text to the bottom of the hero */
-  display: flex; /* Display heading-left and heading-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 100%; /* Full width of the hero */
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   color: #3BCEAB;
   font-family: GillSans;
 }
 .gallery5 .hero .heading-text .heading-left {
-  font-size: 200pt; /* Example styling */
+  font-size: 200pt;
   height: 344px;
   width: 216px;
   display: flex;
-  align-self: flex-end; /* Align at the bottom */
+  align-self: flex-end;
   margin-bottom: -10%;
 }
 .gallery5 .hero .heading-text .heading-right {
-  font-size: 100pt; /* Example styling */
+  font-size: 100pt;
   height: 161px;
   width: 721px;
   display: flex;
@@ -649,10 +1150,10 @@ nav-black .line {
   margin-bottom: -4%;
 }
 .gallery5 .gallery-text {
-  display: flex; /* Display text-left and text-right as flex items */
-  justify-content: space-between; /* Space them apart */
-  width: 980px; /* Match the width of the hero */
-  margin: 0 auto; /* Center the gallery-text */
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 7%;
   font-family: GillSans-LightItalic;
@@ -666,6 +1167,61 @@ nav-black .line {
   height: 133px;
 }
 
+@media (min-width: 576px) {
+  .gallery5 .hero {
+    height: 300px;
+  }
+  .gallery5 .heading-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .gallery5 .heading-left,
+  .gallery5 .heading-right {
+    font-size: 40pt;
+    margin-bottom: 0;
+  }
+  .gallery5 .gallery-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gallery5 .text-left,
+  .gallery5 .text-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery5 .hero {
+    height: 400px;
+  }
+  .gallery5 .heading-left,
+  .gallery5 .heading-right {
+    font-size: 60pt;
+  }
+}
+@media (min-width: 992px) {
+  .gallery5 .hero {
+    width: 980px;
+  }
+  .gallery5 .heading-left,
+  .gallery5 .heading-right {
+    font-size: 80pt;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery5 .hero {
+    width: 1200px;
+  }
+  .gallery5 .heading-left,
+  .gallery5 .heading-right {
+    font-size: 100pt;
+  }
+}
 .blog {
   margin-bottom: 8%;
 }
@@ -694,7 +1250,7 @@ nav-black .line {
 .blog .blog-top-row .entry {
   display: flex;
   align-items: flex-start;
-  width: 45%; /* Adjust the width as needed */
+  width: 45%;
   margin-bottom: 20px;
 }
 .blog .blog-top-row .entry .left-box {
@@ -753,7 +1309,7 @@ nav-black .line {
 .blog .blog-bottom-row .entry {
   display: flex;
   align-items: flex-start;
-  width: 45%; /* Adjust the width as needed */
+  width: 45%;
   margin-bottom: 20px;
 }
 .blog .blog-bottom-row .entry .left-box {
@@ -795,7 +1351,7 @@ nav-black .line {
 }
 
 .blog1 .hero {
-  position: relative; /* Add position relative to allow absolute positioning of date-box */
+  position: relative;
   background-image: linear-gradient(rgba(238, 67, 103, 0.5), rgba(238, 67, 103, 0.5)), url(../images/blog.jpg);
   height: 300px;
   width: 980px;
@@ -806,10 +1362,10 @@ nav-black .line {
   margin-top: 8%;
 }
 .blog1 .hero .date-box {
-  position: absolute; /* Position the date-box relative to its parent */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the box perfectly */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 155px;
   height: 155px;
   background-color: #EE4367;
@@ -829,43 +1385,91 @@ nav-black .line {
 .blog1 .text-heading {
   color: #EE4367;
   font-size: 18pt;
-  width: 856px; /* Set width to match hero */
-  margin: 0 auto; /* Center the elements */
-  text-align: left; /* Align text to the left */
-  margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+  width: 856px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 13.5%;
   padding-top: 5%;
   padding-bottom: 3%;
   font-family: GillSans;
 }
 .blog1 .blog-text .text-top {
   font-size: 18pt;
-  width: 856px; /* Set width to match hero */
-  margin: 0 auto; /* Center the elements */
-  text-align: left; /* Align text to the left */
-  margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+  width: 856px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 13.5%;
   margin-bottom: 5%;
   font-family: GillSans-Light;
 }
 .blog1 .text-heading2 {
   color: #EE4367;
   font-size: 18pt;
-  width: 856px; /* Set width to match hero */
-  margin: 0 auto; /* Center the elements */
-  text-align: left; /* Align text to the left */
-  margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+  width: 856px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 13.5%;
   margin-bottom: 5%;
   font-family: GillSans;
 }
 .blog1 .text-bottom {
   font-size: 18pt;
-  width: 856px; /* Set width to match hero */
-  margin: 0 auto; /* Center the elements */
-  text-align: left; /* Align text to the left */
-  margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+  width: 856px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 13.5%;
   margin-bottom: 15%;
   font-family: GillSans-Light;
 }
 
+@media screen and (max-width: 768px) {
+  .blog1 .hero {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .blog1 .hero .date-box {
+    width: 120px;
+    height: 120px;
+  }
+  .blog1 .text-heading,
+  .blog1 .text-heading2,
+  .blog1 .text-bottom,
+  .blog1 .blog-text .text-top {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blog1 .hero {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .blog1 .text-heading,
+  .blog1 .text-heading2,
+  .blog1 .text-bottom,
+  .blog1 .blog-text .text-top {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blog1 .hero {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .blog1 .hero .date-box {
+    width: 100px;
+    height: 100px;
+  }
+  .blog1 .text-heading,
+  .blog1 .text-heading2,
+  .blog1 .text-bottom,
+  .blog1 .blog-text .text-top {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 16pt;
+  }
+}
 .contact {
   max-width: 1280px;
   margin: 0 auto;
@@ -975,6 +1579,54 @@ nav-black .line {
   font-family: GillSans;
 }
 
+@media screen and (max-width: 768px) {
+  .gallery .heading {
+    margin-left: 5%;
+  }
+  .gallery .line {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .gallery .grid-box .top-row,
+  .gallery .grid-box .bottom-row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .gallery .grid-box .top-row .left-box,
+  .gallery .grid-box .top-row .middle-box,
+  .gallery .grid-box .top-row .right-box,
+  .gallery .grid-box .bottom-row .bottom-left,
+  .gallery .grid-box .bottom-row .bottom-right {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gallery .heading {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery .heading {
+    margin-left: 5%;
+    font-size: 20px;
+  }
+  .gallery .line {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .gallery .grid-box .top-row .left-box,
+  .gallery .grid-box .top-row .middle-box,
+  .gallery .grid-box .top-row .right-box,
+  .gallery .grid-box .bottom-row .bottom-left,
+  .gallery .grid-box .bottom-row .bottom-right {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -997,6 +1649,7 @@ footer .footer-box .footer-logo {
   width: 92px;
   height: 42px;
   margin-bottom: 4%;
+  margin-top: 5%;
 }
 footer .footer-box .footer-address {
   color: #ffffff;
@@ -1022,7 +1675,7 @@ footer .footer-box .footer-subscribe .subscribe-input {
   width: 529px;
   height: 60px;
   padding: 10px;
-  box-sizing: border-box; /* Ensures padding is included in width */
+  box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -1035,7 +1688,7 @@ footer .footer-box .footer-subscribe .subscribe-input::placeholder {
 footer .footer-box .footer-subscribe .subscribe-btn {
   width: 167px;
   height: 60px;
-  background-color: #ffffff; /* Adjust color as needed */
+  background-color: #ffffff;
   color: #fff;
   font-size: 16px;
   border: none;
@@ -1067,4 +1720,49 @@ footer .footer-box .footer-copyright {
   font-size: 12px;
   color: #ffffff;
   font-family: GillSans;
+}
+
+@media (min-width: 576px) {
+  footer {
+    height: auto;
+  }
+  .footer-box {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+  .footer-address,
+  .footer-phone,
+  .footer-email,
+  .footer-socials,
+  .footer-copyright {
+    margin: 0;
+  }
+  .footer-subscribe {
+    margin-top: 0;
+  }
+  .subscribe-input {
+    width: 100%;
+    max-width: 300px;
+  }
+  .subscribe-btn {
+    width: auto;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer-box {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .footer-box {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-box {
+    max-width: 1200px;
+  }
 }

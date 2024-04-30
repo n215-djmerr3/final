@@ -5,7 +5,7 @@
         .hero {
             background-image: linear-gradient(rgba(255, 209, 64, .5), rgba(255, 209, 64, 0.5)), url(../images/home-hero.jpg);
             width: 100%;
-            height: 500px; //can't get it to work with a percent
+            height: 500px; 
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -121,15 +121,15 @@
                 margin-bottom: 2.5%;
             }
             .event-row {
-                display: flex; /* Add this line */
-                justify-content: space-around; /* Or any other justify-content value you prefer */
+                display: flex; 
+                justify-content: space-around; 
                 align-items: center;
                 width: 100%;
 
                 .entry {
                     display: flex;
-                    align-items: flex-start; /* Align items to the top */
-                    margin: 10px; /* Add margin for spacing */
+                    align-items: flex-start; 
+                    margin: 10px; 
                     
                     .date-box {
                         width: 60px;
@@ -138,7 +138,7 @@
                         text-align: center;
                         padding-top: 10px;
                         color: $site-white;
-                        margin-right: 10px; /* Add margin to separate from heading and text */
+                        margin-right: 10px;
                         
                         .top-date {
                             font-family: GillSans-Bold;
@@ -155,7 +155,7 @@
                         .entry-heading {
                             color: $site-white;
                             font-size: 15px;
-                            margin-bottom: 5px; /* Add margin between heading and text */
+                            margin-bottom: 5px; 
                             flex-direction: row;
                             width: 140px;
                             font-family: GillSans;
@@ -170,5 +170,219 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .home .hero {
+        height: 300px;
+    }
+    .home .hero-textbox {
+        padding-top: 120px;
+    }
+    .home .hero-text {
+        width: 50%;
+    }
+    .home .hero-text2 {
+        width: 60%;
+    }
+    .home .hero-button {
+        width: 20%;
+    }
+    .home .white-box {
+        height: 200px;
+    }
+    .home .quote-box {
+        max-width: 90%;
+    }
+    .home .quote-name {
+        margin-left: -35%;
+    }
+    .home .quote-job {
+        margin-left: -25.5%;
+    }
+    .home .purple-box {
+        height: 250px;
+    }
+    .home .purple-heading {
+        font-size: 15pt;
+    }
+    .home .line {
+        width: 60%;
+    }
+    .home .event-row {
+        flex-wrap: wrap;
+    }
+    .home .entry {
+        margin: 5px;
+    }
+    .home .date-box {
+        width: 40px;
+        height: 40px;
+    }
+    .home .entry-heading {
+        font-size: 12px;
+        width: 100px;
+    }
+    .home .entry-text {
+        font-size: 10px;
+        width: 100px;
+    }
+    .home .purple-box {
+        height: auto; 
+        flex-direction: column; 
+    }
+}
+
+
+@media (min-width: 768px) {
+    .home .hero {
+        height: 400px;
+    }
+    .home .hero-textbox {
+        padding-top: 150px;
+    }
+    .home .hero-text {
+        width: 45%;
+    }
+    .home .hero-text2 {
+        width: 48%;
+    }
+    .home .hero-button {
+        width: 15%;
+    }
+    .home .white-box {
+        height: 250px;
+    }
+    .home .quote-box {
+        max-width: 80%;
+    }
+    .home .quote-name {
+        margin-left: -25%;
+    }
+    .home .quote-job {
+        margin-left: -15.5%;
+    }
+    .home .purple-box {
+        height: auto; 
+        flex-direction: column; 
+    
+    }
+    .home .purple-heading {
+        font-size: 18pt;
+    }
+    .home .line {
+        width: 70%;
+    }
+    .home .event-row {
+        flex-wrap: wrap;
+    }
+    .home .entry {
+        margin: 10px;
+    }
+    .home .date-box {
+        width: 50px;
+        height: 50px;
+    }
+    .home .entry-heading {
+        font-size: 14px;
+        width: 120px;
+    }
+    .home .entry-text {
+        font-size: 12px;
+        width: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home .hero-textbox {
+        padding-top: 200px;
+    }
+    .home .hero-text {
+        width: 40%;
+    }
+    .home .hero-text2 {
+        width: 43%;
+    }
+    .home .hero-button {
+        width: 12%;
+    }
+    .home .white-box {
+        height: 300px;
+    }
+    .home .quote-box {
+        max-width: 720px;
+    }
+    .home .quote-name {
+        margin-left: -21%;
+    }
+    .home .quote-job {
+        margin-left: -11.5%;
+    }
+    .home .purple-box {
+        height: auto; 
+        flex-direction: column;
+    }
+    .home .purple-heading {
+        font-size: 20pt;
+    }
+    .home .line {
+        width: 80%;
+    }
+    .home .event-row {
+        flex-wrap: nowrap;
+    }
+    .home .entry {
+        margin: 20px;
+    }
+    .home .date-box {
+        width: 60px;
+        height: 60px;
+    }
+    .home .entry-heading {
+        font-size: 15px;
+        width: 140px;
+    }
+    .home .entry-text {
+        font-size: 13px;
+        width: 140px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .home .hero-textbox {
+        padding-top: 250px;
+    }
+    .home .hero-text {
+        width: 35%;
+    }
+    .home .hero-text2 {
+        width: 38%;
+    }
+    .home .hero-button {
+        width: 10%;
+    }
+    .home .white-box {
+        height: 300px;
+    }
+    .home .quote-name {
+        margin-left: -15%;
+    }
+    .home .quote-job {
+        margin-left: -5.5%;
+    }
+    .home .line {
+        width: 90%;
+    }
+    .home .entry-heading {
+        width: 160px;
+    }
+    .home .entry-text {
+        width: 160px;
+    }
+    .home .purple-box {
+        height: auto; 
+        flex-direction: column; 
     }
 }

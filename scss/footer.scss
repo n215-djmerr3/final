@@ -20,6 +20,7 @@ footer {
             width: 92px;
             height: 42px;
             margin-bottom: 4%;
+            margin-top: 5%;
             
 
         }
@@ -51,7 +52,7 @@ footer {
                 width: 529px;
                 height: 60px;
                 padding: 10px;
-                box-sizing: border-box; /* Ensures padding is included in width */
+                box-sizing: border-box; 
                 border: 2px solid #ccc;
                 border-radius: 5px;
                 font-size: 16px;
@@ -65,7 +66,7 @@ footer {
             .subscribe-btn {
                 width: 167px;
                 height: 60px;
-                background-color: $site-white; /* Adjust color as needed */
+                background-color: $site-white;
                 color: #fff;
                 font-size: 16px;
                 border: none;
@@ -103,5 +104,61 @@ footer {
             color: $site-white;
             font-family: GillSans
         }
+    }
+}
+
+@media (min-width: 576px) {
+    footer {
+        height: auto;
+    }
+
+    .footer-box {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-address,
+    .footer-phone,
+    .footer-email,
+    .footer-socials,
+    .footer-copyright {
+        margin: 0;
+    }
+
+    .footer-subscribe {
+        margin-top: 0;
+    }
+
+    .subscribe-input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .subscribe-btn {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footer-box {
+        max-width: 768px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .footer-box {
+        max-width: 992px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .footer-box {
+        max-width: 1200px;
     }
 }

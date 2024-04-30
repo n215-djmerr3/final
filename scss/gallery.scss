@@ -19,12 +19,12 @@
 
     .grid-box {
         display: flex;
-        flex-direction: column; /* Change to column to stack rows vertically */
+        flex-direction: column; 
 
         .top-row {
             display: flex;
-            justify-content: center; /* Center children horizontally */
-            margin-bottom: 20px; /* Add some space between rows */
+            justify-content: center; 
+            margin-bottom: 20px;
 
             .left-box {
                 background-image: linear-gradient(rgba(255, 209, 64, .5), rgba(255, 209, 64, 0.5)), url(../images/gallery/1.png);
@@ -33,7 +33,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                margin: 0 10px; /* Add margin to create space between boxes */
+                margin: 0 10px;
             }
 
             .middle-box {
@@ -43,7 +43,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                margin: 0 10px; /* Add margin to create space between boxes */
+                margin: 0 10px; 
             }
 
             .right-box {
@@ -53,14 +53,14 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                margin: 0 10px; /* Add margin to create space between boxes */
+                margin: 0 10px; 
             }
         }
 
         .bottom-row {
             display: flex;
-            justify-content: center; /* Center children horizontally */
-            margin-bottom: 20px; /* Add some space between rows */
+            justify-content: center; 
+            margin-bottom: 20px; 
 
             .bottom-left {
                 background-image: linear-gradient(rgba(84, 13, 110, .5), rgba(84, 13, 110, 0.5)), url(../images/gallery/4.jpg);
@@ -69,7 +69,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                margin: 0 10px; /* Add margin to create space between boxes */
+                margin: 0 10px; 
             }
 
             .bottom-right {
@@ -79,7 +79,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                margin: 0 10px; /* Add margin to create space between boxes */
+                margin: 0 10px; 
             }
         }
     }

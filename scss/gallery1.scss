@@ -1,6 +1,6 @@
 .gallery1 {
     .hero {
-        position: relative; /* Add position relative to allow absolute positioning of heading-text */
+        position: relative; 
         background-image: linear-gradient(rgba(255, 209, 64, .5), rgba(255, 209, 64, 0.5)), url(../images/gallery/1.png);
         height: 400px;
         width: 980px;
@@ -9,32 +9,32 @@
         background-repeat: no-repeat;
         margin: 0 auto;
         margin-top: 8%;
-        display: flex; /* Use flexbox to align content */
-        align-items: flex-end; /* Align content vertically to the bottom */
+        display: flex; 
+        align-items: flex-end; 
 
         .heading-text {
-            position: relative; /* Position the heading-text relative to its parent */
-            align-self: flex-end; /* Align heading-text to the bottom of the hero */
-            display: flex; /* Display heading-left and heading-right as flex items */
-            justify-content: space-between; /* Space them apart */
-            width: 100%; /* Full width of the hero */
+            position: relative; 
+            align-self: flex-end; 
+            display: flex; 
+            justify-content: space-between;
+            width: 100%; 
             color: $site-yellow;
             font-family: GillSansregular;
 
 
             .heading-left {
-                font-size: 200pt; /* Example styling */
+                font-size: 200pt; 
                 height: 344px;
                 width: 216px;
                 display: flex;
-                align-self: flex-end; /* Align at the bottom */
+                align-self: flex-end; 
                 margin-bottom: -10%;
                 font-family: GillSans;
 
 
             }
             .heading-right {
-                font-size: 100pt; /* Example styling */
+                font-size: 100pt;
                 height: 161px;
                 width: 721px;
                 display: flex;
@@ -46,10 +46,10 @@
         }
     }
     .gallery-text {
-        display: flex; /* Display text-left and text-right as flex items */
-        justify-content: space-between; /* Space them apart */
-        width: 980px; /* Match the width of the hero */
-        margin: 0 auto; /* Center the gallery-text */
+        display: flex; 
+        justify-content: space-between; 
+        width: 980px; 
+        margin: 0 auto; 
         margin-top: 5%;
         margin-bottom: 7%;
 
@@ -65,3 +65,5 @@
         }
     }
 }
+
+

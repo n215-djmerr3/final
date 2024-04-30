@@ -1,6 +1,6 @@
 .blog1 {
     .hero {
-        position: relative; /* Add position relative to allow absolute positioning of date-box */
+        position: relative; 
         background-image: linear-gradient(rgba(238, 67, 103, .5), rgba(238, 67, 103, 0.5)), url(../images/blog.jpg);
         height: 300px;
         width: 980px;
@@ -11,10 +11,10 @@
         margin-top: 8%;
 
         .date-box {
-            position: absolute; /* Position the date-box relative to its parent */
-            top: 50%; /* Center vertically */
-            left: 50%; /* Center horizontally */
-            transform: translate(-50%, -50%); /* Center the box perfectly */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
             width: 155px;
             height: 155px;
             background-color: $site-pink;
@@ -36,10 +36,10 @@
     .text-heading {
         color: $site-pink;
         font-size: 18pt;
-        width: 856px; /* Set width to match hero */
-        margin: 0 auto; /* Center the elements */
-        text-align: left; /* Align text to the left */
-        margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+        width: 856px; 
+        margin: 0 auto; 
+        text-align: left;
+        margin-left: 13.5%;
         padding-top: 5%;
         padding-bottom: 3%;
         font-family: GillSans;
@@ -48,10 +48,10 @@
     .blog-text {
         .text-top {
             font-size: 18pt;
-            width: 856px; /* Set width to match hero */
-            margin: 0 auto; /* Center the elements */
-            text-align: left; /* Align text to the left */
-            margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+            width: 856px; 
+            margin: 0 auto; 
+            text-align: left;
+            margin-left: 13.5%; 
             margin-bottom: 5%;
             font-family: GillSans-Light;
         }
@@ -60,21 +60,78 @@
     .text-heading2 {
         color: $site-pink;
         font-size: 18pt;
-        width: 856px; /* Set width to match hero */
-        margin: 0 auto; /* Center the elements */
-        text-align: left; /* Align text to the left */
-        margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+        width: 856px; 
+        margin: 0 auto; 
+        text-align: left; 
+        margin-left: 13.5%;
         margin-bottom: 5%;
         font-family: GillSans;
     }
 
     .text-bottom {
         font-size: 18pt;
-        width: 856px; /* Set width to match hero */
-        margin: 0 auto; /* Center the elements */
-        text-align: left; /* Align text to the left */
-        margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+        width: 856px; 
+        margin: 0 auto; 
+        text-align: left;
+        margin-left: 13.5%;
         margin-bottom: 15%;
         font-family: GillSans-Light;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .blog1 .hero {
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+    .blog1 .hero .date-box {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .blog1 .text-heading,
+    .blog1 .text-heading2,
+    .blog1 .text-bottom,
+    .blog1 .blog-text .text-top {
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .blog1 .hero {
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+    .blog1 .text-heading,
+    .blog1 .text-heading2,
+    .blog1 .text-bottom,
+    .blog1 .blog-text .text-top {
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .blog1 .hero {
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+    .blog1 .hero .date-box {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .blog1 .text-heading,
+    .blog1 .text-heading2,
+    .blog1 .text-bottom,
+    .blog1 .blog-text .text-top {
+      width: 90%;
+      margin-left: 5%;
+      font-size: 16pt;
+    }
+  }
+  
