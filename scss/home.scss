@@ -1,0 +1,174 @@
+.home {
+    .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        .hero {
+            background-image: linear-gradient(rgba(255, 209, 64, .5), rgba(255, 209, 64, 0.5)), url(../images/home-hero.jpg);
+            width: 100%;
+            height: 500px; //can't get it to work with a percent
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+        }
+    
+        .hero-textbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 170px;
+    
+    
+    
+            .heading {
+                font-size: 40pt;
+                color: $site-white;
+                font-family: ProximaNova;
+    
+            }
+    
+            .hero-text {
+                width: 35%;
+                height: 46px;
+                font-size: 15pt;
+                color: $site-pink;
+                text-align: center;
+                margin-top: 1%;
+                font-family: GillSans-Italic;
+    
+            }
+            .hero-text2 {
+                width: 38%;
+                height: 46px;
+                font-size: 15pt;
+                color: $site-white;
+                text-align: center;
+                font-family: GillSans-Italic;
+            }
+    
+            .hero-button {
+                margin: 1.5%;
+                width: 10%;
+                height: 41px;
+                background-color: $site-pink;
+                text-align: center;
+                padding-top: 10px;
+                margin-top: 4%;
+                font-family: GillSans;
+                
+
+                a {
+                    color: $site-white;
+                    text-decoration: none;
+                }
+            }
+    
+        }
+
+        .white-box {
+            height: 300px;
+            width: 100%;
+            background-color: $site-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .quote-box {
+                color: $site-yellow;
+                max-width: 720px;
+                font-size: 12pt;
+                font-family: GillSans-SemiBoldItalic;
+            }
+            .quote-name {
+                color: $site-pink;
+                max-width: 980px;
+                margin-left: -51%;
+                margin-top: 2%;
+            }
+            .quote-job {
+                color: $site-gray;
+                max-width: 980px;
+                margin-left: -40.5%;
+                margin-top: .5%;
+            }
+
+        }
+
+        .purple-box {
+            background-color: $site-purple;
+            height: 320px;
+            width: 100%;
+
+            .purple-heading {
+                color: $site-white;
+                margin-left: 5%;
+                padding-top: 5%;
+                font-size: 20pt;
+                font-family: GillSans;
+            }
+
+
+            .line {
+                border: none;
+                height: 2px;
+                width: 392px;
+                background-color: $site-white;
+                margin: auto;
+                margin-left: 5%;
+                margin-top: .5%;
+                margin-bottom: 2.5%;
+            }
+            .event-row {
+                display: flex; /* Add this line */
+                justify-content: space-around; /* Or any other justify-content value you prefer */
+                align-items: center;
+                width: 100%;
+
+                .entry {
+                    display: flex;
+                    align-items: flex-start; /* Align items to the top */
+                    margin: 10px; /* Add margin for spacing */
+                    
+                    .date-box {
+                        width: 60px;
+                        height: 60px;
+                        background-color: $site-pink;
+                        text-align: center;
+                        padding-top: 10px;
+                        color: $site-white;
+                        margin-right: 10px; /* Add margin to separate from heading and text */
+                        
+                        .top-date {
+                            font-family: GillSans-Bold;
+                            font-size: 20pt;
+        
+                        }
+                        .bottom-date {
+                            font-family: GillSans-Light;
+                            font-size: 10pt;
+        
+                        }
+                    }
+                    .entry-text-box {
+                        .entry-heading {
+                            color: $site-white;
+                            font-size: 15px;
+                            margin-bottom: 5px; /* Add margin between heading and text */
+                            flex-direction: row;
+                            width: 140px;
+                            font-family: GillSans;
+                        }
+                        .entry-text {
+                            color: $site-pink;
+                            font-size: 13px;
+                            width: 140px;
+                            font-family: GillSans;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

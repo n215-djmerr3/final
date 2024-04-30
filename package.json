@@ -1,0 +1,19 @@
+{
+  "name": "final2",
+  "version": "1.0.0",
+  "description": "this is my final project for the eventsy site for N215",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile": "sass scss/styles.scss css/styles.css -w --no-source-map",
+    "serve": "live-server"
+  },
+  "keywords": [],
+  "author": "DJ Merrell",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
+}

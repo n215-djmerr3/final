@@ -1,0 +1,86 @@
+.gallery {
+    .heading {
+        margin-top: 5%;
+        margin-left: 13.5%;
+        font-size: 25px;
+        font-family: GillSans;
+    }
+
+    .line {
+        border: none;
+        height: 2px;
+        width: 229px;
+        background-color: black;
+        margin: auto;
+        margin-left: 13.5%;
+        margin-top: .5%;
+        margin-bottom: 2.5%;
+    }
+
+    .grid-box {
+        display: flex;
+        flex-direction: column; /* Change to column to stack rows vertically */
+
+        .top-row {
+            display: flex;
+            justify-content: center; /* Center children horizontally */
+            margin-bottom: 20px; /* Add some space between rows */
+
+            .left-box {
+                background-image: linear-gradient(rgba(255, 209, 64, .5), rgba(255, 209, 64, 0.5)), url(../images/gallery/1.png);
+                height: 187px;
+                width: 489px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0 10px; /* Add margin to create space between boxes */
+            }
+
+            .middle-box {
+                background-image: linear-gradient(rgba(238, 67, 103, .5), rgba(238, 67, 103, 0.5)), url(../images/gallery/2.jpeg);
+                height: 187px;
+                width: 187px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0 10px; /* Add margin to create space between boxes */
+            }
+
+            .right-box {
+                background-image: linear-gradient(rgba(8, 173, 105, .5), rgba(8, 173, 105, 0.5)), url(../images/gallery/3.jpg);
+                height: 187px;
+                width: 265px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0 10px; /* Add margin to create space between boxes */
+            }
+        }
+
+        .bottom-row {
+            display: flex;
+            justify-content: center; /* Center children horizontally */
+            margin-bottom: 20px; /* Add some space between rows */
+
+            .bottom-left {
+                background-image: linear-gradient(rgba(84, 13, 110, .5), rgba(84, 13, 110, 0.5)), url(../images/gallery/4.jpg);
+                height: 306px;
+                width: 603px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0 10px; /* Add margin to create space between boxes */
+            }
+
+            .bottom-right {
+                background-image: linear-gradient(rgba(59, 206, 171, .5), rgba(59, 206, 171, 0.5)), url(../images/gallery/5.png);
+                height: 306px;
+                width: 355px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0 10px; /* Add margin to create space between boxes */
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.contact {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .contact-heading {
+        font-size: 22pt;
+        margin-top: 10%;
+        margin-left: 12%;
+        margin-bottom: .8%;
+        font-family: GillSans;
+    }
+
+    .line {
+        border: none;
+        height: 3px;
+        width: 229px;
+        background-color: black;
+        position: absolute;
+        left: 13.5%;
+    }
+    
+    .content {
+        width: 980px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 12%;
+
+        .content-right {
+            width: 50%;
+            margin-top: 50px;
+            margin-bottom: 80px;
+            padding-left: 8%;
+
+            .gps {
+                background-image: url(../images/map.jpg);
+                    width: 400px;
+                    height: 442px; //can't get it to work with a percent
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin: 0 auto;
+                    margin-left: 0;
+            }
+        }
+    
+        .content-left {
+            width: 45%;
+            
+            .form-info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 11%;
+
+
+                .name {
+                    height: 60px;
+                    width: 529px;
+                    border: none;
+                    background-color: #F2F2F2;
+                    font-size: 18px;
+                    margin-bottom: 4%;
+                    padding-left: 1%;
+                    font-family: GillSans;
+
+                }
+    
+                .email {
+                    height: 60px;
+                    width: 529px;
+                    border: none;
+                    background-color: #F2F2F2;
+                    font-size: 18px;
+                    margin-bottom: 4%;
+                    padding-left: 1%;
+                    font-family: GillSans;
+
+                }
+    
+                .company {
+                    height: 60px;
+                    width: 529px;
+                    border: none;
+                    background-color: #F2F2F2;
+                    font-size: 18px;
+                    margin-bottom: 4%;
+                    padding-left: 1%;
+                    font-family: GillSans;
+
+                }
+    
+                .message {
+                    height: 199px;
+                    width: 529px;
+                    border: none;
+                    background-color: #F2F2F2;
+                    font-size: 18px;
+                    margin-bottom: 4%;
+                    padding: 15px; 
+                    font-family: GillSans;
+
+                }
+
+                .submit-button {
+                    margin: 1.5%;
+                    width: 167px;
+                    height: 60px;
+                    background-color: $site-pink;
+                    text-align: center;
+                    padding-top: 17px;
+                    margin-left: -80%;
+                    margin-bottom: 20%;
+                    a {
+                        color: $site-white;
+                        text-decoration: none;
+                        font-family: GillSans;
+                    }
+                }
+            }
+        }
+    }
+}
+

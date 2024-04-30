@@ -1,0 +1,80 @@
+.blog1 {
+    .hero {
+        position: relative; /* Add position relative to allow absolute positioning of date-box */
+        background-image: linear-gradient(rgba(238, 67, 103, .5), rgba(238, 67, 103, 0.5)), url(../images/blog.jpg);
+        height: 300px;
+        width: 980px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 8%;
+
+        .date-box {
+            position: absolute; /* Position the date-box relative to its parent */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Center the box perfectly */
+            width: 155px;
+            height: 155px;
+            background-color: $site-pink;
+            text-align: center;
+            color: $site-white;
+
+            .top-date {
+                font-size: 55px;
+                font-weight: bold;
+                margin-top: 15%;
+                font-family: GillSans-Bold;
+            }
+            .bottom-date {
+                font-size: 31px;
+                font-family: GillSans-Light;
+            }
+        }
+    }
+    .text-heading {
+        color: $site-pink;
+        font-size: 18pt;
+        width: 856px; /* Set width to match hero */
+        margin: 0 auto; /* Center the elements */
+        text-align: left; /* Align text to the left */
+        margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+        padding-top: 5%;
+        padding-bottom: 3%;
+        font-family: GillSans;
+
+    }
+    .blog-text {
+        .text-top {
+            font-size: 18pt;
+            width: 856px; /* Set width to match hero */
+            margin: 0 auto; /* Center the elements */
+            text-align: left; /* Align text to the left */
+            margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+            margin-bottom: 5%;
+            font-family: GillSans-Light;
+        }
+    }
+
+    .text-heading2 {
+        color: $site-pink;
+        font-size: 18pt;
+        width: 856px; /* Set width to match hero */
+        margin: 0 auto; /* Center the elements */
+        text-align: left; /* Align text to the left */
+        margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+        margin-bottom: 5%;
+        font-family: GillSans;
+    }
+
+    .text-bottom {
+        font-size: 18pt;
+        width: 856px; /* Set width to match hero */
+        margin: 0 auto; /* Center the elements */
+        text-align: left; /* Align text to the left */
+        margin-left: 13.5%; /* Add padding to align with the edge of the hero */
+        margin-bottom: 15%;
+        font-family: GillSans-Light;
+    }
+}

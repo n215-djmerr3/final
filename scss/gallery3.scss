@@ -1,0 +1,64 @@
+.gallery3 {
+    .hero {
+        position: relative; /* Add position relative to allow absolute positioning of heading-text */
+        background-image: linear-gradient(rgba(8, 173, 105, .5), rgba(8, 173, 105, 0.5)), url(../images/gallery/3.jpg);
+        height: 400px;
+        width: 980px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 8%;
+        display: flex; /* Use flexbox to align content */
+        align-items: flex-end; /* Align content vertically to the bottom */
+
+        .heading-text {
+            position: relative; /* Position the heading-text relative to its parent */
+            align-self: flex-end; /* Align heading-text to the bottom of the hero */
+            display: flex; /* Display heading-left and heading-right as flex items */
+            justify-content: space-between; /* Space them apart */
+            width: 100%; /* Full width of the hero */
+            color: $site-green;
+            font-family: GillSans;
+
+
+            .heading-left {
+                font-size: 200pt; /* Example styling */
+                height: 344px;
+                width: 216px;
+                display: flex;
+                align-self: flex-end; /* Align at the bottom */
+                margin-bottom: -10%;
+
+
+            }
+            .heading-right {
+                font-size: 100pt; /* Example styling */
+                height: 161px;
+                width: 721px;
+                display: flex;
+                align-self: flex-end;
+                margin-bottom: -4%;
+
+            }
+        }
+    }
+    .gallery-text {
+        display: flex; /* Display text-left and text-right as flex items */
+        justify-content: space-between; /* Space them apart */
+        width: 980px; /* Match the width of the hero */
+        margin: 0 auto; /* Center the gallery-text */
+        margin-top: 5%;
+        margin-bottom: 7%;
+        font-family: GillSans-LightItalic;
+
+        .text-left {
+            width: 490px;
+            height: 133px;
+        }
+        .text-right {
+            width: 451px;
+            height: 133px;
+        }
+    }
+}

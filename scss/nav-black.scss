@@ -1,0 +1,55 @@
+nav-black{
+    width: $content-width;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      .nav-logo {
+        background-image: url(../images/logo/logo-black.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 92px;
+        height: 42px; //if I use a percent the image disappears for some reason
+        margin-bottom: 2%;
+        margin-top: 3%;
+        margin-left: 3%;
+      
+        }
+  
+      .links-nav {
+        min-width: 30.5%;
+        height: 42px; //doesn't matter what percent I put in here is wont move any farther down
+        margin-bottom: 2%;
+        margin-top: 5%;
+        margin-left: 25%;
+          
+        .nav-name {
+          padding-left: 15px; //can't get it to align right with a percent
+          color: $site-pink;
+        }
+  
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 15pt;
+          font-family: GillSansregular;
+          margin-left: 2%;
+        }
+      }
+    }
+  
+    .line {
+      border: none;
+      height: 2px;
+      width: 980px;
+      background-color: black;
+      margin: auto;
+    }
+  }

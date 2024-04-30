@@ -1,0 +1,43 @@
+.about {
+    position: relative;
+    .hero {
+        position: relative;
+        background-image: linear-gradient(rgba(255, 209, 64, .5), rgba(255, 209, 64, 0.5)), url(../images/about.jpg);
+        width: 980px;
+        height: 379px; //can't get it to work with a percent
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 8%;
+
+        .about-hero-text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 25px;
+            font-family: GillSans;
+        }
+
+    }
+
+    .about-hero-line {
+        border: none;
+        height: 2px;
+        width: 229px;
+        background-color: black;
+        margin: auto;
+        margin-left: 13.2%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    .about-text {
+        width: 980px;
+        font-size: 14pt;
+        max-width: 980px;
+        margin: 0 auto;
+        margin-bottom: 12%;
+        font-family: GillSans-LightItalic;
+    }
+}
